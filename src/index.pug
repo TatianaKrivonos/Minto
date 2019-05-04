@@ -9,10 +9,84 @@ html(lang="en")
     script src="js/svg4everybody.min.js"
     script svg4everybody()
   body
-    header
-      .container
+    header.page-header
+      .page-header__container
+        a(href="index.html").page-header__logo.logo
+          svg(width="70" height="70")
+            use(xlink:href="img/sprite.svg#logo")
+          h1.logo__title minto
+        nav.page-header__main-nav.main-nav
+          ul.main-nav__list
+            li.main-nav__item
+              a.main-nav__link(href="#") Home
+                svg(width="20" height="20")
+                  use(xlink:href="img/sprite.svg#")
+            li.main-nav__item
+              a.main-nav__link(href="#") About us
+                svg(width="20" height="20")
+                  use(xlink:href="img/sprite.svg#")
+            li.main-nav__item
+              a.main-nav__link(href="#") Services
+                svg(width="20" height="20")
+                  use(xlink:href="img/sprite.svg#")
+            li.main-nav__item
+              a.main-nav__link(href="#") Contuct Us
+                svg(width="20" height="20")
+                  use(xlink:href="img/sprite.svg#")
+    .promo
+      .promo__container
+        .promo__slider.slider#j-slider
+          .slider__item
+            h2.slider__title Minto
+            p.slider__descr A minimal Web Design from cssauthor.com
+          .slider__item
+            h2.slider__title Minto
+            p.slider__descr A minimal Web Design from cssauthor.com
+          .slider__item
+            h2.slider__title Minto
+            p.slider__descr A minimal Web Design from cssauthor.com
     main
-    footer
-
+      .about
+        .about__container
+          p <span>Lorem ipsum dolor sit amet</span>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      .blog
+        .blog__container
+          article.blog__article.article
+            .article__row
+              .article__img
+                img(src="img/" alt="articleImg" width="270" height="270")
+              .article__text-col
+                h3.article__title Lorem ipsum dolor sit amet
+                p.article__descr Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+                a.article__link Read more
+      .clients
+        .clients__container
+          p.clients__descr <span>where</span> we have been featured
+          .clients__descr-line
+          .clients__row
+            .clients__company-name
+              svg(width="185" height="30")
+                use(xlink:href="img/sprite.svg#")
+            .clients__company-name
+              svg(width="150" height="30")
+                use(xlink:href="img/sprite.svg#")
+            .clients__company-name
+              svg(width="220" height="40")
+                use(xlink:href="img/sprite.svg#")
+            .clients__company-name
+              svg(width="165" height="35")
+                use(xlink:href="img/sprite.svg#")
+    footer.page-footer
+      .page-footer__container
+        p.page-footer__copyright
+        ul.page-footer__list
+          li.page-footer__item
+            a.page-footer__link(href="#")
+              svg(width="30" height="30")
+                use(xlink:href="img/sprite.svg#")
+            li.page-footer__item
+              a.page-footer__link(href="#")
+                svg(width="30" height="30")
+                  use(xlink:href="img/sprite.svg#")
     script src="js/vendors.min.js"
     script src ="js/script.min.js"

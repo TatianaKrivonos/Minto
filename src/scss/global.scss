@@ -1,0 +1,56 @@
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  font-family: $font-family;
+  font-size: 14px;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+img {
+  max-width: 100%;
+  min-height: 1px;
+  height: auto;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+button,
+button:active,
+button:focus,
+textarea,
+textarea:active
+textarea:focus,
+input,
+input:active,
+input:focus {
+  outline: 0;
+}

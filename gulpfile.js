@@ -148,7 +148,7 @@ function serve() {
     port: 8080,
   });
   watch(`${dir.src}scss/**/*.scss`, { delay: 100 }, styles);
-  watch(`${dir.src}*.pug`).on('change', series(
+  watch(`${dir.src}**/*.pug`).on('change', series(
     buildHTML,
     browserSync.reload
   ));

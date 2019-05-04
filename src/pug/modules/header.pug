@@ -1,3 +1,34 @@
+-
+ navLinks = [
+  {
+    "link"     : "#",
+    "name"     : "Home",
+    "svg"      : "img/sprite.svg#",
+    "widthSvg" : "20",
+    "heightSvg": "20"
+  },
+  {
+    "link"     : "#",
+    "name"     : "About us",
+    "svg"      : "img/sprite.svg#",
+    "widthSvg" : "20",
+    "heightSvg": "20"
+  },
+  {
+    "link"     : "#",
+    "name"     : "Services",
+    "svg"      : "img/sprite.svg#",
+    "widthSvg" : "20",
+    "heightSvg": "20"
+  },
+  {
+    "link"     : "#",
+    "name"     :"Contuct Us",
+    "svg"      : "img/sprite.svg#",
+    "widthSvg" : "20",
+    "heightSvg": "20"
+  }];
+
 header.page-header
   .page-header__container
     a(href="index.html").page-header__logo.logo
@@ -6,19 +37,9 @@ header.page-header
       h1.logo__title minto
     nav.page-header__main-nav.main-nav
       ul.main-nav__list
-        li.main-nav__item
-          a.main-nav__link(href="#") Home
-            svg(width="20" height="20")
-              use(xlink:href="img/sprite.svg#")
-        li.main-nav__item
-          a.main-nav__link(href="#") About us
-            svg(width="20" height="20")
-              use(xlink:href="img/sprite.svg#")
-        li.main-nav__item
-          a.main-nav__link(href="#") Services
-            svg(width="20" height="20")
-              use(xlink:href="img/sprite.svg#")
-        li.main-nav__item
-          a.main-nav__link(href="#") Contuct Us
-            svg(width="20" height="20")
-              use(xlink:href="img/sprite.svg#")
+        for i in navLinks
+          li.main-nav__item
+            a.main-nav__link(href=i.link)
+              svg(width=i.widthSvg height=i.heightSvg)
+                use(xlink:href=i.svg)
+              =i.name

@@ -4,11 +4,17 @@ block content
     main
       .about
         .about__container
-          p <span>Lorem ipsum dolor sit amet</span>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat7.
+          p.about__descr
+            span Lorem ipsum dolor sit amet,
+            = ' '
+            | consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim an minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat7.
       include pug/modules/blog
       .clients
         .clients__container
-          p.clients__descr <span>where</span> we have been featured
+          p.clients__descr
+            span where
+            = ' '
+            | we have been featured
           .clients__descr-line
           .clients__row
             .clients__company-name

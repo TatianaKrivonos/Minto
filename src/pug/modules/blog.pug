@@ -1,10 +1,22 @@
+-
+  articleData = [{
+    "img"   :"img/",
+    "alt"   :"articleImg",
+    "width" :"270",
+    "height":"270",
+    "title" :"Lorem ipsum dolor sit amet",
+    "text"  :"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem."}
+  ];
+
 .blog
   .blog__container
-    article.blog__article.article
-      .article__row
-        .article__img
-          img(src="img/" alt="articleImg" width="270" height="270")
-        .article__text-col
-          h3.article__title Lorem ipsum dolor sit amet
-          p.article__descr Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
-          a.article__link Read more
+    for i in articleData
+      article.blog__article.article
+        .article__row
+          .article__img
+            img(src=i.img alt=i.alt width=i.width height=i.height)
+          .article__text-col
+            h3.article__title=i.title
+            p.article__descr=i.text
+            a.article__link
+              | Read more

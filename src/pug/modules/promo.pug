@@ -1,12 +1,23 @@
+-
+  promoData = [
+    {
+      "title":"Minto",
+      "description":"A minimal Web Design from cssauthor.com"
+    },
+    {
+      "title":"Minto",
+      "description":"A minimal Web Design from cssauthor.com"
+    },
+    {
+      "title":"Minto",
+      "description":"A minimal Web Design from cssauthor.com"
+    }];
+
 .promo
   .promo__container
     .promo__slider.slider#j-slider
-      .slider__item
-        h2.slider__title Minto
-        p.slider__descr A minimal Web Design from cssauthor.com
-      .slider__item
-        h2.slider__title Minto
-        p.slider__descr A minimal Web Design from cssauthor.com
-      .slider__item
-        h2.slider__title Minto
-        p.slider__descr A minimal Web Design from cssauthor.com
+      for i in promoData
+        .slider__item
+          h2.slider__title=i.title
+          p.slider__descr=i.description
+

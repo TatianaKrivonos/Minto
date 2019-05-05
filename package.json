@@ -3,8 +3,16 @@
   "version": "1.0.0",
   "description": "Minto",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "gulp"
+    "start": "gulp",
+    "build": "npm start build",
+    "test": "stylelint \"src/scss/**/*.scss\" --syntax=scss",
+    "format": "stylefmt -r src/scss/**/*.scss",
+    "lint-staged": "lint-staged",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.css": "stylelint",
+    "*.scss": "stylelint --syntax=scss"
   },
   "author": "Tatiana Krivonos",
   "license": "MIT",

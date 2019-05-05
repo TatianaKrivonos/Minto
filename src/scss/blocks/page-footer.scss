@@ -1,0 +1,45 @@
+.page-footer {
+  background-color: $gray-light;
+  background-image: url('../img/pattern1.png');
+  background-repeat: repeat;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px 0;
+    width: $content-with;
+  }
+
+  &__copyright {
+    color: $gray-darker;
+    font-size: 15px;
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    display: flex;
+    margin-right: 20px;
+    width: 30px;
+    height: 30px;
+    background-color: $main-color;
+    border-radius: 50%;
+
+    &__last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    display: flex;
+    margin: auto;
+
+    svg {
+      fill: $gray-light;
+    }
+  }
+}

@@ -11,21 +11,22 @@ block content
       include pug/modules/blog
       .clients
         .clients__container
-          p.clients__descr
-            span where
-            = ' '
-            | we have been featured
-          .clients__descr-line
-          .clients__row
-            .clients__company-name
-              svg(width="185" height="30")
-                use(xlink:href="img/sprite.svg#")
-            .clients__company-name
-              svg(width="150" height="30")
-                use(xlink:href="img/sprite.svg#")
-            .clients__company-name
-              svg(width="220" height="40")
-                use(xlink:href="img/sprite.svg#")
-            .clients__company-name
-              svg(width="165" height="35")
-                use(xlink:href="img/sprite.svg#")
+          .clients__header
+            p.clients__descr
+              span where
+              = ' '
+              | we have been featured
+            .clients__descr-line
+          ul.clients__list
+            li.clients__item
+              svg(width="188" height="30")
+                use(xlink:href="img/sprite.svg#client1")
+            li.clients__item
+              svg(width="150" height="28")
+                use(xlink:href="img/sprite.svg#client2")
+            li.clients__item
+              svg(width="222" height="39")
+                use(xlink:href="img/sprite.svg#client3")
+            li.clients__item
+              svg(width="171" height="41")
+                use(xlink:href="img/sprite.svg#client4")

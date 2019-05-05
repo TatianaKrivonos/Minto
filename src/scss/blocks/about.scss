@@ -1,0 +1,23 @@
+.about {
+
+  &__container {
+    margin: 0 auto;
+    padding: 10px 0;
+    width: $content-with;
+    border-top: 1px solid $gray;
+    border-bottom: 1px solid $gray;
+  }
+
+  &__descr {
+    color: $text-color-dark;
+    text-align: center;
+    font-size: 23px;
+    font-style: italic;
+    line-height: 36px;
+
+    span {
+      color: $main-color;
+      font-weight: 700;
+    }
+  }
+}

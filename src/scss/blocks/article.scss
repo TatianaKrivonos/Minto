@@ -1,0 +1,41 @@
+.article {
+
+  &__row {
+    display: flex;
+  }
+
+  &__title {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    color: $gray-dark;
+    font-size: 31px;
+    font-weight: 700;
+  }
+
+  &__text-col {
+    color: $text-color;
+  }
+
+  &__descr {
+    margin-bottom: 20px;
+    font-size: 15px;
+    line-height: 28px;
+  }
+
+  &__link {
+    display: inline-flex;
+    align-items: baseline;
+    float: right;
+    color: $text-color;
+    font-size: 13px;
+
+    &::after {
+      display: block;
+      content: '';
+      margin-left: 5px;
+      width: 11px;
+      height: 7px;
+      background-image: url('../img/article-arrow.svg');
+    }
+  }
+}

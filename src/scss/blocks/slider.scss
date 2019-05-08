@@ -1,0 +1,26 @@
+.slider {
+
+  &__item {
+    padding-top: 160px;
+    padding-bottom: 190px;
+    color: #fff;
+    text-align: center;
+    background-image: url('../img/slider.png');
+    background-repeat: no-repeat;
+    background-position: -10px center;
+    background-size: cover;
+  }
+
+  &__title {
+    margin-bottom: 25px;
+    line-height: 0.8;
+    font-weight: 500;
+    font-size: 117px;
+    text-shadow: -5px 5px 0 rgba(0, 0, 0, 0.5);
+  }
+
+  &__descr {
+    line-height: 0.9;
+    font-size: 31px;
+  }
+}

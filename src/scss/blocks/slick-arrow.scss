@@ -1,0 +1,26 @@
+.slick-arrow {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  padding: 0;
+  border: 0;
+  width: 35px;
+  height: 65px;
+  font: 0/0 a;
+  z-index: 1;
+  color: transparent;
+  background-color: $main-color;
+  background-image: url(../img/slider-arrow.png);
+  background-repeat: no-repeat;
+  background-position: 2px center;
+}
+
+.slick-prev {
+  left: 0;
+}
+
+.slick-next {
+  right: 0;
+  transform: rotate(180deg);
+}

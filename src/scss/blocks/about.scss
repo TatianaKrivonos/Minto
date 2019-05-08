@@ -2,18 +2,19 @@
 
   &__container {
     margin: 0 auto;
-    padding: 10px 0;
+    padding: 0 10px;
     width: $content-with;
-    border-top: 1px solid $gray;
-    border-bottom: 1px solid $gray;
   }
 
   &__descr {
+    padding: 10px 20px;
     color: $text-color-dark;
     text-align: center;
     font-size: 23px;
     font-style: italic;
     line-height: 36px;
+    border-top: 1px solid $gray;
+    border-bottom: 1px solid $gray;
 
     span {
       color: $main-color;

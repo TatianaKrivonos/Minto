@@ -14,8 +14,9 @@
     for i in articleData
       article.blog__article.article
         .article__row
-          .article__img
-            img(src=i.img alt=i.alt width=i.width height=i.height)
+          .article__gradient
+            .article__img
+              img(src=i.img alt=i.alt width=i.width height=i.height)
           .article__text-col
             h3.article__title=i.title
             p.article__descr=i.text
